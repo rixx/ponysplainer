@@ -1,0 +1,29 @@
+@import 'settings'
+variables()
+normalize-css()
+base()
+typography()
+components()
+scrollbars()
+
+
+html, body, #app
+  margin: 0
+  height: 100%
+  overflow: hidden
+
+a
+  color $clr-primary
+  text-decoration none
+
+#error
+  display: flex
+  border: solid 2px $clr-danger
+  #symbol
+    font-size: 36px
+    background-color: $clr-danger
+    color: $clr-white
+  > *
+    padding: 12px
+  address
+    padding: 14px
